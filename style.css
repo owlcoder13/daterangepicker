@@ -1,0 +1,72 @@
+.owl-drp {
+  width: fit-content;
+  font-family: sans-serif;
+  border: 1px solid #aaa;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+.owl-drp__month {}
+
+.owl-drp__month .owl-drp__month-header {
+  font-weight: bolder;
+  display: flex;
+  /* margin-bottom: 10px; */
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.owl-drp__month-left,
+.owl-drp__month-right {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-drp__month-header-names {
+  text-align: center;
+}
+
+.owl-drp__month-header-year {
+  font-size: 12px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.owl-drp__week {
+  display: flex;
+  width: fit-content;
+  /* gap: 5px; */
+  /* margin-bottom: 5px; */
+}
+
+.owl-drp__day {
+  /* border: 1px solid #eee; */
+  background: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+}
+
+.owl-drp__day.selected {
+  background: rgb(162, 192, 255);
+}
+
+.owl-drp__day.gray {
+  color: #aaa;
+}
+
+.owl-drp__day:hover,
+.owl-drp__day.active {
+  background: rgb(70, 117, 219);
+  color: white;
+}
